@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to diplay more information on this page</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="test"></p>
+
+<script>
+function myFunction() {
+  var changingWordsWhenAlertBoxAppears;
+  if(confirm("press a button!") == true)
+  {
+    changingWordsWhenAlertBoxAppears = "You pressed Ok!, now you are going to see more stuff!!!!";
+  }
+  else
+  {
+      changingWordsWhenAlertBoxAppears = "Why did you press cancel, you hurt my feelings.";
+  }
+  document.getElementById("test").innerHTML = changingWordsWhenAlertBoxAppears;
+
+}
+</script>
+
+</body>
+</html>
